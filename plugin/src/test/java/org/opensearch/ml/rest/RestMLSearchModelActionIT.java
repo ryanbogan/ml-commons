@@ -43,6 +43,6 @@ public class RestMLSearchModelActionIT extends MLCommonsRestTestCase {
     }
 
     public void testSecrets() {
-        assertEquals("Testing testing testing", System.getenv("TEST_SECRET"));
+        assertEquals("t1e2s34tk45e67y89", System.getenv("TEST_SECRET"));
     }
 }
