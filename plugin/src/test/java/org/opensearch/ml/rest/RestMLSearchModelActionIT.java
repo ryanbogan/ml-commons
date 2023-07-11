@@ -41,4 +41,8 @@ public class RestMLSearchModelActionIT extends MLCommonsRestTestCase {
         assertNotNull(searchModelResponse);
         assertEquals(RestStatus.OK, TestHelper.restStatus(searchModelResponse));
     }
+
+    public void testSecrets() {
+        assertEquals("Testing1234", System.getenv("TEST_SECRET"));
+    }
 }
